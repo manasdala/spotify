@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Web Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1e2125;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 1230px;
+      height: 630px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: black;
+      border: 2px solid #000;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .content {
+      border: 1px solid #000;
+      padding: 20px;
+      height: 350px;
+      width: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .playlist {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .playlist-item1 {
+      width: calc(17.22% - 20px);
+      height: 220px;
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: #282828;
+      border: 1px solid #000;
+      border-radius: 10px;
+    }
+
+    .playlist-item1 img {
+      width: 100%;
+      height: 160px;
+      border-radius: 5px;
+    }
+
+    .playlist-item2 {
+      width: calc(20.33% - 20px);
+      height: 220px;
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: #282828;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+
+    .playlist-item2 img {
+      width: 195px;
+      height: 185px;
+      border-radius: 5px;
+    }
+
+    .playlist-item3 {
+      width: calc(18.33% - 20px);
+      height: 220px;
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: #282828;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+
+    .playlist-item3 img {
+      width: 100%;
+      height: 125px;
+      border-radius: 5px;
+    }
+
+    .playlist-item4 img {
+      width: 185px;
+      height: 185px;
+      border-radius: 5px;
+    }
+
+    .playlist-item4 {
+      width: calc(19.33% - 20px);
+      height: 220px;
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: #282828;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+
+    .playlist-item5 img {
+      width: 185px;
+      height: 180px;
+      border-radius: 5px;
+    }
+
+    .playlist-item5 {
+      width: calc(19.33% - 20px);
+      height: 220px;
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: #282828;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+
+    .footer {
+      border-top: 1px solid #000;
+      padding-top: 10px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .content-parent {
+      display: flex;
+      gap: 20px;
+    }
+
+    .home {
+      width: calc(10.33% - 20px);
+      height: 379px;
+      margin-bottom: 10px;
+      padding: 5px;
+      background-color: black;
+      border: 1px solid #000;
+      border-radius: 5px;
+      justify-content: center;
+    }
+
+    .btn {
+      width: 100px;
+      height: 30px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+      background-color: rgb(27, 206, 75);
+    }
+
+    .playb {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .bar {
+      justify-content: center;
+      display: flex;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div>
+        <img src="logo1.png" alt="logo" height="50" width="150" />
+      </div>
+      
+      <div>
+        <button class="btn">Log in</button>
+        <button class="btn">Sign up</button>
+      </div>
+    </div>
+    <div class="content-parent">
+      <div class="home">
+        <img src="search1.jpg" alt="#" height="375" width="80">
+      </div>
+      <div class="content">
+        <h2>Your Playlists</h2>
+        <div class="playlist">
+          <a class="playlist-item1" style="text-decoration: none; color: white;"
+          href="https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O?si=ZACx9VcGSBG34R7YF0w62g">
+            <div>
+              <img src="anirudh.webp" alt="Playlist 1" />
+              <p>Anirudh Ravicharan Hits</p>
+             
+            </div>
+          </a>
+          <a class="playlist-item2" style="text-decoration: none; color: white;" 
+          href="https://open.spotify.com/playlist/6AqG4CClS5uGWyZtTbaBAy?si=cffa38d5e3df4d13">
+            <div>
+              <img src="mass.jpeg.jpg" alt="Playlist 2" />
+              <p>Mass Songs</p>
+            </div>
+          </a>
+          <a class="playlist-item3" style="text-decoration: none; color: white;" 
+          href="https://open.spotify.com/playlist/3p2tAkOvJqOPYjttRxEQD5?si=4c2185aa6ac74c6c">
+            <div>
+              <img src="melody.jpg" alt="Playlist 3" />
+              <p>Melody Songs ,Feel the melodies of the music.It always bring out emotion.</p>
+            </div>
+          </a>
+          <a class="playlist-item4" style="text-decoration: none; color: white;"
+          href="https://open.spotify.com/artist/5FVBduYaeVBb6JIghza7v6?si=QsvqUIm0ROC11-by2qKSww">
+          <div>
+            <img src="daily mix.jpg" alt="Playlist 3" />
+            <p>Santhosh</p>
+          </div>
+          </a>
+          <a class="playlist-item5" style="text-decoration: none; color: white;" 
+          href="https://open.spotify.com/artist/4IKVDbCSBTxBeAsMKjAuTs?si=f47cKqC9TgWym4RvqpEgQA">
+          <div>
+            <img src="daily mix1.jpg" alt="Playlist 3" />
+            <p>Pritam,Armaan malik</p>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <div class="playb">
+      <div class="song">
+        <img src="song.png" alt="song" width="250px">
+      </div>
+      <div>
+        <div class="playb">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-fast"></i>
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-forward-fast"></i>
+          <i class="fa-solid fa-repeat"></i>
+        </div>
+        <div class="bar">
+          <img src="bar icon.png" alt="bar" width="400px">
+        </div>
+      </div>
+
+      <div class="son">
+        <img src="son.png" alt="#" width="300px">
+      </div>
+    </div>
+    <div class="footer">&copy; 2024 Spotify. All rights reserved.</div>
+  </div>
+</body>
+
+</html>
